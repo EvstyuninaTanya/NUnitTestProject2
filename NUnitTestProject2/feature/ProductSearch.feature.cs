@@ -140,7 +140,7 @@ namespace HW21.Feature
          testRunner.And("I set reorderLevel \"10\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 21
-         testRunner.Then("Pages Header should be \"All Products\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+         testRunner.Then("Page have product \"Rosemary\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

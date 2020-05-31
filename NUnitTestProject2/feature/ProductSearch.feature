@@ -18,5 +18,5 @@
          And I set unitsInStock "23"
          And I set unitsOnOrder "40"
          And I set reorderLevel "10"
-         Then Pages Header should be "All Products"
+         Then Page have product "Rosemary"
         

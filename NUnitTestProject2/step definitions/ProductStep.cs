@@ -93,10 +93,10 @@ namespace HW21.step_definitions
             new AddAndViewProduct(driver).SetLvl(new Product(null, null, null, null, null, null, null, null, null, null, reorderLevel));
         }
 
-        [Then(@"Pages Header should be ""(.*)""")]
+        [Then(@"Page have product ""(.*)""")]
         public void ThenPagesHeaderShouldBe(string exeptedHeader)
         {
-            Assert.AreEqual(exeptedHeader, new AddAndViewProduct(driver).GetHeader());
+            Assert.AreEqual(exeptedHeader, new AddAndViewProduct(driver).GetPrName());
         }
     }
 }

@@ -15,6 +15,7 @@ namespace HW21
             this.driver = driver;
         }
         private IWebElement header => driver.FindElement(By.CssSelector("h2"));
+        private IWebElement productName => driver.FindElement(By.XPath($"(//a[contains(text(), \"Rosemary\")])"));
         private IWebElement productNameId => driver.FindElement(By.Id("ProductName"));
         private IWebElement categoryId => driver.FindElement(By.Id("CategoryId"));
         private IWebElement supplierId => driver.FindElement(By.Id("SupplierId"));
@@ -62,6 +63,10 @@ namespace HW21
         public string GetHeader()
         {
             return header.Text;
+        }
+        public string GetPrName()
+        {
+            return productName.Text;
         }
         public string GetPrNameId()
         {
