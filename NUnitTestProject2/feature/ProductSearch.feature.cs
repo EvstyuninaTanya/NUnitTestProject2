@@ -35,8 +35,8 @@ namespace HW21.Feature
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Product search", "         As a user\r\n         I want to open the application\r\n         So I can se" +
-                    "arch product", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Product search", "         As a user\r\n         I want to open the application\r\n         So I can ad" +
+                    "d product", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -104,13 +104,43 @@ namespace HW21.Feature
          testRunner.Given("I open \"http://localhost:5000/\" url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 9
-         testRunner.And("I click on button \"All Products\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+         testRunner.When("I set login \"user\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 10
-         testRunner.And("I select product \"Rosemary\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+         testRunner.And("I set password \"user\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 11
-         testRunner.Then("Product name should be \"Rosemary\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+         testRunner.And("I click on button \"All Products\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 12
+         testRunner.And("I click on create new", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 13
+         testRunner.And("I set name of product \"Rosemary\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 14
+         testRunner.And("I set category \"Beverages\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 15
+         testRunner.And("I set supplier \"Bigfoot Breweries\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 16
+         testRunner.And("I set unitPrice \"17\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 17
+         testRunner.And("I set quantityPerUnit \"2 boxes\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 18
+         testRunner.And("I set unitsInStock \"23\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 19
+         testRunner.And("I set unitsOnOrder \"40\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 20
+         testRunner.And("I set reorderLevel \"10\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 21
+         testRunner.Then("Pages Header should be \"All Products\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
